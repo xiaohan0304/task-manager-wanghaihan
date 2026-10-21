@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能任务管理系统</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>智能任务管理系统</h1>
+
+    <div class="add-task-wrap">
+        <input id="taskInput" type="text" placeholder="请输入新任务">
+        <select id="prioritySelect">
+            <option value="高">高</option>
+            <option value="中" selected>中</option>
+            <option value="低">低</option>
+        </select>
+        <button id="addBtn">添加任务</button>
+    </div>
+
+    <div class="filter-wrap">
+        <span>按优先级筛选：</span>
+        <select id="filterSelect">
+            <option value="全部">全部</option>
+            <option value="高">高</option>
+            <option value="中">中</option>
+            <option value="低">低</option>
+        </select>
+    </div>
+
+    <div id="taskList" class="task-list"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
